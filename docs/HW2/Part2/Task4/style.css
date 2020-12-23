@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bg-box{
+    height: 100vh;
+    width: 100%;
+    background-color: green;
+    background-image: url("Images/pole-zelen-trava-dom-derevya.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.bg-box:after{
+    display: block;
+    content: "";
+    background-image: url("Images/grass-png-images-pictures-transparent-28.png");
+    background-position: bottom left;
+    background-size: 20%;
+    background-repeat: repeat-x;
+    border-top: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 3;
+}
+.bg-box:before{
+    display: block;
+    content: "";
+    background-image: url("Images/lamp-png-0.png");
+    background-position: top left;
+    background-size: 4%;
+    background-repeat: repeat-x;
+    border-bottom: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 3;
+}
+
+body:before{
+    display: block;
+    content: "";
+    background-image: url("Images/Ёжик.png");
+    background-position: top left;
+    background-size: 40%;
+    background-repeat: repeat-y;
+    border-bottom: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100vh;
+    z-index: 3;
+}
+body:after{
+    display: block;
+    content: "";
+    background-image: url("Images/doughnut-removebg-preview.png");
+    background-position: top right;
+    background-size: 40%;
+    background-repeat: repeat-y;
+    border-bottom: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100vh;
+    z-index: 0;
+}
+

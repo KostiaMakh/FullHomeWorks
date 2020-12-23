@@ -1,0 +1,18 @@
+section{
+    background-color: darkkhaki;
+    border: saddlebrown 2px solid;
+    width: 100%;
+}
+
+.imgLeftBlock{
+    float: left;
+    max-width: 200px;
+    margin-right: 30px;
+}
+h2{
+    font-size: 16px;
+    text-align: center;
+}
+.floatBlock:after{
+    clear: both;
+}

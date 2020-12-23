@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<form id="AppF" method="post" action="#" style="width: 450px">
+    <fieldset form="AppF">
+        <legend>Application form:</legend>
+        <label for="FullN" style="width: 100px; display: inline-block; margin-bottom: 7px">Full name:</label>
+        <input type="text" id="FullN" style="width: 200px">
+        <br>
+        <label for="Mail" style="width: 100px; display: inline-block; margin-bottom: 7px">Email:</label>
+        <input type="email" id="Mail" style="width: 200px">
+        <br>
+        <label style="width: 100px; display: inline-block; margin-bottom: 7px; margin-top: 0">Gender:</label>
+        <div style="width: 300px; display: inline-block">
+            <input type="radio" id="gender1" value="male" name="gender">
+            <label for="gender1">Male</label>
+            <input type="radio" id="gender2" value="female" name="gender">
+            <label for="gender2">Female</label>
+        </div>
+        <br>
+        <label for="Nationality" style="width: 100px; display: inline-block; margin-bottom: 7px">Nationality</label>
+        <select id="Nationality" style="width: 200px; display: inline-block">
+            <option>-Select-</option>
+            <option>Russian</option>
+            <option>Ukranian</option>
+            <option>Poland</option>
+        </select>
+        <br>
+        <label style="width: 100px; display: inline-block; margin-bottom: 7px; margin-top: 0">Skills:</label>
+        <div style="width: 300px; display: inline-block">
+            <input type="checkbox" id="AspNet" name="Asp Net">
+            <label for="AspNet">Asp Net</label>
+            <input type="checkbox" id="JQuery" name="JQuery">
+            <label for="JQuery">JQuery</label>
+            <br>
+            <input type="checkbox" id="MVC" name="MVC">
+            <label for="MVC">MVC</label>
+            <input type="checkbox" id="Sql" name="Sql">
+            <label for="Sql">Sql</label>
+        </div>
+        <label style="width: 100px; display: inline-block; margin-bottom: 7px; margin-top: 0">Post applying for:</label>
+        <div style="width: 300px; display: inline-block">
+            <input type="radio" id="postApp1" value="Tranee" name="gender">
+            <label for="postApp1">Tranee</label>
+            <input type="radio" id="postApp2" value="Software engineer" name="gender">
+            <label for="postApp2">Software engineer</label>
+            <br>
+            <input type="radio" id="postApp3" value="Team leader" name="gender">
+            <label for="postApp3">Team leader</label>
+            <input type="radio" id="postApp4" value="Project manager" name="gender">
+            <label for="postApp4">Project manager</label>
+        </div>
+        <br>
+        <label style="width: 100px; display: inline-block; margin-bottom: 7px; margin-top: 0">Upload resume:</label>
+        <input type="file" name="f" style="width: 300px; display: inline-block">
+        <label for="comment" style="width: 100px; display: inline-block; margin-bottom: 7px; margin-top: 0">Past your resume:</label>
+        <textarea id="comment" name="Text1" rows="5"style="width: 300px; display: inline-block; margin-bottom: 7px"></textarea>
+        <br>
+        <input type="checkbox" id="agree" name="agree">
+        <label for="agree" style="margin-bottom: 7px">I agree to returns & conditions</label>
+        <br>
+        <input type="checkbox" id="Notf" name="Notf">
+        <label for="Notf" style="margin-bottom: 7px">Notify me the statys via Email</label>
+        <div style="margin-left: 70px">
+            <button type="submit" style="width: 100px; display: inline-block">Submit</button>
+            <button type="reset" style="width: 100px; margin-left: 20px; display: inline-block">Reset</button>
+        </div>
+
+    </fieldset>
+</form>
+</body>
+</html>

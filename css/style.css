@@ -1,0 +1,235 @@
+@import url(bootstrap.css);
+@import url(bootstrap-grid.css);
+@import url(bootstrap-reboot.css);
+@import url(../fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css);
+@font-face {
+  font-family: "Mistral";
+  src: url("../fonts/7fontsrumistral.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/7fontsrumistral.eot?#iefix") format("embedded-opentype"), url("../fonts/7fontsrumistral.otf") format("opentype"), url("../fonts/7fontsrumistral.svg") format("svg"), url("../fonts/7fontsrumistral.ttf") format("truetype"), url("../fonts/7fontsrumistral.woff") format("woff"), url("../fonts/7fontsrumistral.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  width: 100%;
+  padding: 60px 0;
+  background-color: #7614c9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  header h1, header span {
+    font-family: "Mistral";
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    font-size: 72px;
+    text-align: left;
+    margin: 0; }
+  header .numberWork {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+  header .ALevelLogo {
+    display: flex;
+    justify-items: center;
+    align-items: flex-end;
+    padding-left: 50px; }
+    header .ALevelLogo > div {
+      background-color: #270742;
+      height: 120px;
+      width: 270px;
+      position: relative;
+      z-index: 0;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-start;
+      padding: 0 20px; }
+      header .ALevelLogo > div:after {
+        content: '';
+        display: block;
+        width: 80px;
+        height: 80px;
+        background-color: #270742;
+        position: absolute;
+        top: -40px;
+        right: -40px;
+        z-index: 1; }
+      header .ALevelLogo > div:before {
+        content: '';
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-color: #7614c9;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2; }
+      header .ALevelLogo > div p {
+        color: #d44709;
+        font-size: 60px;
+        margin-bottom: 0; }
+
+section {
+  height: 80vh; }
+  section .LeftColumn {
+    height: 100%;
+    position: relative;
+    padding: 15px 25px 15px 10px; }
+    section .LeftColumn:after {
+      content: "";
+      display: block;
+      background-color: #f5eaff;
+      width: 15px;
+      height: 90%;
+      position: absolute;
+      right: 0;
+      top: 5%; }
+    section .LeftColumn ul {
+      list-style-type: none; }
+    section .LeftColumn li {
+      padding: 10px 0 10px 20px;
+      margin-top: 3px;
+      margin-bottom: 3px;
+      width: 100%; }
+      section .LeftColumn li:hover {
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        transform: scale(1.05) translateX(3px);
+        color: white;
+        background-color: #ac55f6; }
+      section .LeftColumn li.active {
+        color: white;
+        background-color: #ac55f6; }
+    section .LeftColumn .innerList {
+      padding-left: 20px;
+      list-style-type: none; }
+  section .RightColumn {
+    width: 80%;
+    height: 100%;
+    padding: 80px 20px 10px 80px; }
+    section .RightColumn iframe {
+      width: 100%;
+      height: 100%;
+      display: none;
+      border-color: #a177c4; }
+
+#homeWorksList {
+  width: 100%;
+  padding-top: 15px; }
+  #homeWorksList .Item {
+    padding: 10px;
+    margin-bottom: 10px; }
+  #homeWorksList a {
+    display: block;
+    color: white; }
+    #homeWorksList a:hover {
+      text-decoration: none; }
+    #homeWorksList a span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0;
+      background-color: pink;
+      font-size: 30px;
+      border-radius: 15px;
+      border: 1px #7614c9 solid;
+      box-shadow: -1px 2px 17px 0px rgba(154, 13, 123, 0.63); }
+      #homeWorksList a span:hover {
+        background-color: #9fcdff;
+        transition: 0.3s ease-in-out;
+        transform: scale(1.03) translateY(-5px);
+        border-color: darkblue; }
+
+/* drop menu part1*/
+#toggle_part1 {
+  display: none; }
+
+#toggle_part1:checked ~ #drop_punkt_part1 {
+  display: block; }
+
+#drop_punkt_part1 {
+  display: none;
+  cursor: pointer; }
+
+/* drop menu part2*/
+#toggle_part2 {
+  display: none; }
+
+#toggle_part2:checked ~ #drop_punkt_part2 {
+  display: block; }
+
+#drop_punkt_part2 {
+  display: none; }
+
+.prewPage {
+  width: 100%;
+  display: block; }
+
+h2 {
+  font-size: 20px; }
+
+#toglerrButton, #TogglerButtonCheckBox {
+  display: none; }
+
+@media all and (max-width: 575px) {
+  h2 {
+    font-size: 12px; }
+
+  #TogglerButtonCheckBox {
+    display: block;
+    position: fixed;
+    left: 10px;
+    top: 10px; }
+
+  #toglerrButton:checked ~ .DropDownMenuFull {
+    position: fixed;
+    visibility: visible;
+    top: 0;
+    left: 0;
+    width: 300px;
+    background-color: #80bdff;
+    height: 100vh;
+    transition: 0.8s;
+    z-index: 2; }
+
+  #toglerrButton:checked ~ #TogglerButtonCheckBox i {
+    display: none; }
+
+  #toglerrButton:checked ~ #TogglerButtonCheckBox:after {
+    content: "\f410";
+    font-family: 'Font Awesome 5 Free';
+    font-size: 20px;
+    color: white;
+    display: block;
+    width: 40px;
+    height: 80px;
+    position: fixed;
+    top: 15px;
+    right: 0;
+    z-index: 3 !important; }
+
+  .DropDownMenuFull {
+    visibility: hidden; }
+
+  .prewPage {
+    position: relative; }
+    .prewPage:after {
+      content: '';
+      background-color: #f5eaff;
+      height: 8px;
+      width: 94%;
+      left: 3%;
+      position: absolute;
+      bottom: -10px; }
+
+  section .LeftColumn {
+    position: relative; }
+    section .LeftColumn:after {
+      display: none; } }
+
+/*# sourceMappingURL=style.css.map */

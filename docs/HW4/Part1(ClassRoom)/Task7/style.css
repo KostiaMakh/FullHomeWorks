@@ -1,0 +1,74 @@
+div{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+span{
+    display: block;
+    background-color: black;
+    height: 10px;
+    width: 10px;
+    margin-top: 20px;
+    border-radius: 50%;
+    animation: Ball 7s infinite;
+    animation-timing-function: linear;
+}
+@keyframes Ball {
+    0%{
+    }
+    30%{
+        transform: translateX(20px) translateY(170px);
+    }
+    39.5%{
+        transform: translateX(39px) translateY(123px);
+    }
+    40%{
+        transform: translateX(40px) translateY(120px);
+    }
+    40.5%{
+        transform: translateX(41px) translateY(123px);
+    }
+    50%{
+        transform: translateX(50px) translateY(170px);
+    }
+    57.5%{
+        transform: translateX(59px) translateY(133px);
+    }
+    58%{
+        transform: translateX(60px) translateY(130px);
+    }
+    58.5%{
+        transform: translateX(61px) translateY(133px);
+    }
+    65%{
+        transform: translateX(65px) translateY(170px);
+    }
+    69.5%{
+        transform: translateX(74px) translateY(146px);
+    }
+    70%{
+        transform: translateX(75px) translateY(145px);
+    }
+    70.5%{
+        transform: translateX(76px) translateY(146px);
+    }
+    75%{
+        transform: translateX(85px) translateY(170px);
+    }
+    81%{
+        transform: translateX(92px) translateY(160px);
+    }
+    86%{
+        transform: translateX(100px) translateY(170px);
+    }
+    90%{
+        transform: translateX(108px) translateY(165px);
+    }
+    94%{
+        transform: translateX(120px) translateY(170px);
+    }
+    100%{
+        transform: translateX(126px) translateY(170px);
+
+    }
+}

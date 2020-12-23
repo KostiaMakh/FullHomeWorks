@@ -1,0 +1,32 @@
+.TopElement{
+    width: 100%;
+    height: 100px;
+    background-color: darkorchid;
+    margin-bottom: 15px;
+}
+.BottomElement{
+    width: 100%;
+    display: inline-block;
+
+}
+.BottomElement .Item{
+    height: 300px;
+    width: 33.333%;
+    box-sizing: border-box;
+}
+.BottomElement .Item:first-child{
+    float: left;
+    padding: 0 15px 0 0;
+}
+.BottomElement .Item:last-child{
+    float: right;
+    padding: 0 0 0 15px;
+}
+.BottomElement .Item:nth-child(2){
+    float: left;
+}
+.inner{
+    background-color: darkorchid;
+    width: 100%;
+    height: 100%;
+}

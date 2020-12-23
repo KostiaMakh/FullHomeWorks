@@ -1,0 +1,42 @@
+.cube{
+    height: 100px;
+    width: 100px;
+
+}
+.floatLeft{
+    float: left;
+    margin-right: 20px;
+}
+.floatRight{
+    float: right;
+    margin-left: 20px;
+
+}
+.cube:hover{
+    background-color: saddlebrown;
+}
+div:first-of-type{
+    background-color: yellow;
+}
+div:nth-child(2){
+    background-color: green;
+}
+div:nth-child(3){
+    background-color: darkkhaki;
+}
+div:nth-child(4){
+    background-color: darkgreen;
+}
+div:last-of-type{
+    background-color: coral;
+}
+.sectionFloatLeft:after{
+clear: both;
+}
+.sectionFloatRight:after{
+    clear: both;
+}
+main{
+    max-width: 600px;
+    margin: auto;
+}

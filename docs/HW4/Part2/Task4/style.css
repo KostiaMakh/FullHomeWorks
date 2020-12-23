@@ -1,0 +1,27 @@
+div{
+    height: 100px;
+    width: 100px;
+    animation: kubicMotion 5s infinite;
+
+}
+@keyframes kubicMotion {
+    0%{
+        background-color: red;
+    }
+    25%{
+        background-color: darkblue;
+        transform: translateY(200px);
+    }
+    50%{
+        background-color: greenyellow;
+        transform: translateX(200px) translateY(200px);
+    }
+    75%{
+        background-color: yellow;
+        transform: translateX(200px) translateY(0);
+    }
+    100%{
+        background-color: red;
+        transform: translateX(0) translateY(0);
+    }
+}

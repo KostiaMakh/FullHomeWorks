@@ -1,0 +1,15 @@
+h3:first-of-type{
+    color: pink;
+}
+#greycol{
+    color: darkgray;
+}
+.text-box div:last-of-type{
+    color: red;
+}
+h3:last-of-type+p{
+    color: green;
+}
+.yellow{
+    color: yellow;
+}

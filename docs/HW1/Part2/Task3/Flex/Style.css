@@ -1,0 +1,16 @@
+.TopElement{
+    width: 100%;
+    height: 100px;
+    background-color: darkorchid;
+    margin-bottom: 15px;
+}
+.BottomElement{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.BottomElement .Item{
+    height: 300px;
+    width: 32%;
+    background-color: darkorchid;
+}

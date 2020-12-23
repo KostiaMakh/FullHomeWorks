@@ -1,0 +1,52 @@
+li{
+
+    margin: 5px;
+    float: left;
+    list-style-type: none;
+}
+.inner{
+    border: grey 3px solid;
+    background-color: lightgray;
+    width: 100px;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: green;
+}
+ul{
+    text-decoration: none;
+
+}
+
+li:nth-child(4){
+    height: 140px;
+    clear: left;
+}
+li:nth-child(2){
+    clear: left;
+}
+p{
+    font-size: 25px;
+}
+section{
+    max-width: 800px;
+}
+.Item{
+    height: 300px;
+    width: 200px;
+    display: flex;
+}
+ #SuperInner{
+    width: 50%;
+    height: 140px;
+     border: grey 3px solid;
+     background-color: lightgray;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 24px;
+     color: green;
+
+}

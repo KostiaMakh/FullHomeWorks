@@ -1,0 +1,14 @@
+table{
+    width: 100%;
+
+}
+th{
+    background-color: darkorchid;
+}
+.firstLine{
+    height: 100px;
+}
+td{
+    background-color: darkorchid;
+    height: 400px;
+}

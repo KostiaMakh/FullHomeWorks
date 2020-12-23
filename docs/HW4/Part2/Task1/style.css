@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+section{
+    height: 100vh;
+    width: 100%;
+    background-color: forestgreen;
+}
+blockquote{
+    height: 10vh;
+}
+.cardBlock{
+    height: 90vh;
+    position: relative;
+}
+p{
+    font-size: 26px;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    width: 100%;
+}
+cite{
+    font-size: 14px;
+    color: white;
+    font-style: italic;
+    display: block;
+    text-align: center;
+}
+.card{
+    height: 160px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: white;
+    border: darkgrey 1px solid;
+}
+.item{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img:first-of-type{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+img:last-of-type{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    transform: rotate(180deg);
+}
+img:nth-child(2){
+    height: 30px;
+}
+img{
+    height: 20px;
+}
+.card:first-of-type{
+    position: absolute;
+    left: 50px;
+    top: 150px;
+    z-index: 1;
+    transform-origin: 50% 100%;
+    transform: rotate(-10deg);
+}
+.card:last-of-type{
+    position: absolute;
+    left: 50px;
+    top: 150px;
+    transform: rotate(12deg);
+    z-index: 3;
+    transform-origin: 50% 100%;
+}
+.card:nth-child(2){
+    position: absolute;
+    left: 50px;
+    top: 150px;
+    transform: rotate(2deg);
+    z-index: 2;
+    transform-origin: 50% 100%;
+}
+.card:first-of-type:hover{
+    transition: 0.7s;
+    transform: translateY(-15px) rotate(-10deg) scale(1.04);
+}
+.card:last-of-type:hover{
+    transition: 0.7s;
+    transform: translateY(-15px) rotate(12deg) scale(1.06);
+}
+.card:nth-child(2):hover{
+    transition: 0.7s;
+    transform: translateY(-15px) rotate(2deg) scale(1.06);
+}
