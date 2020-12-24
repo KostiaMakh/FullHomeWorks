@@ -151,20 +151,22 @@ section .RightColumn {
       margin-bottom: 10px; }
   #homeWorksList .Item {
     padding: 10px;
-    margin-bottom: 10px;
-    animation: startBlock 1s linear; }
-    #homeWorksList .Item:nth-child(2) {
-      animation: startBlock 1.3s linear; }
-    #homeWorksList .Item:nth-child(3) {
-      animation: startBlock 1.6s linear; }
-    #homeWorksList .Item:nth-child(4) {
-      animation: startBlock 1.9s linear; }
-    #homeWorksList .Item:nth-child(5) {
-      animation: startBlock 2.2s linear; }
-    #homeWorksList .Item:nth-child(6) {
-      animation: startBlock 2.5s linear; }
-    #homeWorksList .Item:hover {
-      text-decoration: none; }
+    margin-bottom: 10px; }
+    @media screen and (min-width: 575px) {
+      #homeWorksList .Item {
+        animation: startBlock 1s linear; }
+        #homeWorksList .Item:nth-child(2) {
+          animation: startBlock 1.3s linear; }
+        #homeWorksList .Item:nth-child(3) {
+          animation: startBlock 1.6s linear; }
+        #homeWorksList .Item:nth-child(4) {
+          animation: startBlock 1.9s linear; }
+        #homeWorksList .Item:nth-child(5) {
+          animation: startBlock 2.2s linear; }
+        #homeWorksList .Item:nth-child(6) {
+          animation: startBlock 2.5s linear; }
+        #homeWorksList .Item:hover {
+          text-decoration: none; } }
   #homeWorksList .homeWorksPagesMainScreen {
     width: 90%;
     margin-left: 5%; }
@@ -219,7 +221,7 @@ section .RightColumn {
     font-size: 20px;
     padding-right: 20px; }
 
-h2 {
+.homeWork_park1 label {
   font-size: 20px; }
 
 #toglerrButton, #TogglerButtonCheckBox {

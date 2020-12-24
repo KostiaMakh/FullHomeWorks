@@ -1,0 +1,71 @@
+@import "../../../../../css/style.css";
+
+$colorGrey: darkgrey;
+
+body{
+  padding-top: 50px;
+}
+.row{
+  &:first-of-type{
+  div{
+    &:first-of-type{
+      h1{
+        text-align: center;
+        display: block;
+        margin-bottom: 10px;
+        font-size: 30px;
+      }
+      span{
+        color: $colorGrey;
+        display: block;
+        text-align: center;
+        margin-bottom: 8px;
+        font-size: 16px;
+      }
+      p{
+        text-align: center;
+        color: $colorGrey;
+        font-size: 12px;
+      }
+    }
+  }
+    margin-bottom: 40px;
+}
+&:last-of-type{
+  i{
+    font-size: 80px;
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+    color: #80bdff;
+  }
+  div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    &:first-of-type{
+      i{
+        color: mediumpurple;
+      } }
+    &:last-of-type{
+      i{
+        color: pink;
+      } }
+    }
+
+  p{
+    text-align: center;
+    color: $colorGrey;
+    font-size: 12px;
+  }
+  span{
+    color: $colorGrey;
+    display: block;
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: bolder;
+  }
+  }
+}
+

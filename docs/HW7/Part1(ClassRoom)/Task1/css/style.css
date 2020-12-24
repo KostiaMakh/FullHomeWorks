@@ -1,0 +1,48 @@
+@import url(../../../../../css/style.css);
+body {
+  padding-top: 50px; }
+
+.row:first-of-type {
+  margin-bottom: 40px; }
+  .row:first-of-type div:first-of-type h1 {
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 30px; }
+  .row:first-of-type div:first-of-type span {
+    color: darkgrey;
+    display: block;
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 16px; }
+  .row:first-of-type div:first-of-type p {
+    text-align: center;
+    color: darkgrey;
+    font-size: 12px; }
+.row:last-of-type i {
+  font-size: 80px;
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+  color: #80bdff; }
+.row:last-of-type div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .row:last-of-type div:first-of-type i {
+    color: mediumpurple; }
+  .row:last-of-type div:last-of-type i {
+    color: pink; }
+.row:last-of-type p {
+  text-align: center;
+  color: darkgrey;
+  font-size: 12px; }
+.row:last-of-type span {
+  color: darkgrey;
+  display: block;
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: bolder; }
+
+/*# sourceMappingURL=style.css.map */
