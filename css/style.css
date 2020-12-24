@@ -74,49 +74,47 @@ header {
         font-size: 60px;
         margin-bottom: 0; }
 
-section {
-  height: 80vh; }
-  section .LeftColumn {
+section .LeftColumn {
+  height: 80vh;
+  position: relative;
+  padding: 15px; }
+  section .LeftColumn:after {
+    content: "";
+    display: block;
+    background-color: #f5eaff;
+    width: 15px;
+    height: 90%;
+    position: absolute;
+    right: 0;
+    top: 5%; }
+  section .LeftColumn ul {
+    list-style-type: none; }
+  section .LeftColumn li {
+    padding: 10px 0 10px 20px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    width: 100%; }
+    section .LeftColumn li:hover {
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+      transform: scale(1.05) translateX(3px);
+      color: white;
+      background-color: #ac55f6; }
+    section .LeftColumn li.active {
+      color: white;
+      background-color: #ac55f6; }
+  section .LeftColumn .innerList {
+    padding-left: 20px;
+    list-style-type: none; }
+section .RightColumn {
+  width: 80%;
+  height: auto;
+  padding: 80px 20px 10px 80px; }
+  section .RightColumn iframe {
+    width: 100%;
     height: 100%;
-    position: relative;
-    padding: 15px 25px 15px 10px; }
-    section .LeftColumn:after {
-      content: "";
-      display: block;
-      background-color: #f5eaff;
-      width: 15px;
-      height: 90%;
-      position: absolute;
-      right: 0;
-      top: 5%; }
-    section .LeftColumn ul {
-      list-style-type: none; }
-    section .LeftColumn li {
-      padding: 10px 0 10px 20px;
-      margin-top: 3px;
-      margin-bottom: 3px;
-      width: 100%; }
-      section .LeftColumn li:hover {
-        cursor: pointer;
-        transition: 0.3s ease-in-out;
-        transform: scale(1.05) translateX(3px);
-        color: white;
-        background-color: #ac55f6; }
-      section .LeftColumn li.active {
-        color: white;
-        background-color: #ac55f6; }
-    section .LeftColumn .innerList {
-      padding-left: 20px;
-      list-style-type: none; }
-  section .RightColumn {
-    width: 80%;
-    height: 100%;
-    padding: 80px 20px 10px 80px; }
-    section .RightColumn iframe {
-      width: 100%;
-      height: 100%;
-      display: none;
-      border-color: #a177c4; }
+    display: none;
+    border-color: #a177c4; }
 
 #homeWorksList {
   width: 100%;
@@ -147,7 +145,11 @@ section {
 
 /* drop menu part1*/
 #toggle_part1 {
-  display: none; }
+  display: none;
+  position: relative; }
+  #toggle_part1:after {
+    content: 'f0dd';
+    font-family: 'Font Awesome 5 Free'; }
 
 #toggle_part1:checked ~ #drop_punkt_part1 {
   display: block; }
@@ -168,7 +170,14 @@ section {
 
 .prewPage {
   width: 100%;
-  display: block; }
+  display: block;
+  margin-bottom: 15px;
+  text-decoration: none;
+  color: black; }
+  .prewPage i {
+    color: #e58e69;
+    font-size: 20px;
+    padding-right: 20px; }
 
 h2 {
   font-size: 20px; }
@@ -176,15 +185,25 @@ h2 {
 #toglerrButton, #TogglerButtonCheckBox {
   display: none; }
 
+.AboutHomeWork {
+  display: none; }
+
 @media all and (max-width: 575px) {
   h2 {
+    font-size: 14px; }
+
+  li {
     font-size: 12px; }
+    li:active {
+      transform: none; }
 
   #TogglerButtonCheckBox {
     display: block;
     position: fixed;
     left: 10px;
-    top: 10px; }
+    top: 10px;
+    font-size: 30px;
+    color: white; }
 
   #toglerrButton:checked ~ .DropDownMenuFull {
     position: fixed;
@@ -192,25 +211,26 @@ h2 {
     top: 0;
     left: 0;
     width: 300px;
-    background-color: #80bdff;
+    background-color: #f5eaff;
     height: 100vh;
     transition: 0.8s;
-    z-index: 2; }
+    z-index: 2;
+    padding-left: 20px;
+    padding-top: 15px; }
 
   #toglerrButton:checked ~ #TogglerButtonCheckBox i {
     display: none; }
 
   #toglerrButton:checked ~ #TogglerButtonCheckBox:after {
-    content: "\f410";
+    content: "\f057";
     font-family: 'Font Awesome 5 Free';
-    font-size: 20px;
+    font-size: 40px;
     color: white;
     display: block;
-    width: 40px;
     height: 80px;
     position: fixed;
     top: 15px;
-    right: 0;
+    right: 10px;
     z-index: 3 !important; }
 
   .DropDownMenuFull {
@@ -228,8 +248,22 @@ h2 {
       bottom: -10px; }
 
   section .LeftColumn {
-    position: relative; }
+    position: relative;
+    padding-left: 20px; }
     section .LeftColumn:after {
-      display: none; } }
+      display: none; }
+
+  .AboutHomeWork {
+    display: block;
+    width: 100%;
+    position: relative;
+    margin-bottom: 5px; }
+    .AboutHomeWork:after {
+      width: 80%;
+      height: 2px;
+      background-color: #7614c9;
+      bottom: 0;
+      left: 10%;
+      margin-bottom: 10px; } }
 
 /*# sourceMappingURL=style.css.map */

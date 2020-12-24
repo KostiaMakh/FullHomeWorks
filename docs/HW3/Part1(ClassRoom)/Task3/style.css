@@ -20,11 +20,11 @@ ul{
 
 }
 
-li:nth-child(4){
+section>.mainList>li:nth-child(4){
     height: 140px;
     clear: left;
 }
-li:nth-child(2){
+section>.mainList>li:nth-child(2){
     clear: left;
 }
 p{
@@ -34,19 +34,18 @@ section{
     max-width: 800px;
 }
 .Item{
-    height: 300px;
-    width: 200px;
-    display: flex;
+    max-width: 250px;
+    padding-left: 5px;
 }
- #SuperInner{
-    width: 50%;
-    height: 140px;
-     border: grey 3px solid;
-     background-color: lightgray;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     font-size: 24px;
-     color: green;
+.Item .inner{
 
+    width: 100px;
+    height: 170px;
+    float: left;
+}
+li>.Item>li:nth-child(1), li>.Item>li:nth-child(2){
+    height: 100px;
+}
+.Kvadrat .Item:after{
+    clear: both;
 }
