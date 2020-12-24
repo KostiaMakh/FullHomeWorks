@@ -296,9 +296,12 @@ section {
   }
 }
 
-.homeWork_park1{
+#DropDownMenuFull{
 label{
-  font-size: 20px;}
+  font-size: 20px;
+&:hover{
+  cursor: pointer;
+}}
 }
 
 #toglerrButton, #TogglerButtonCheckBox {

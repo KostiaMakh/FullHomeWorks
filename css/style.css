@@ -221,8 +221,10 @@ section .RightColumn {
     font-size: 20px;
     padding-right: 20px; }
 
-.homeWork_park1 label {
+#DropDownMenuFull label {
   font-size: 20px; }
+  #DropDownMenuFull label:hover {
+    cursor: pointer; }
 
 #toglerrButton, #TogglerButtonCheckBox {
   display: none; }
