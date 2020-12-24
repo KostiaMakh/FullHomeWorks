@@ -118,29 +118,65 @@ section .RightColumn {
 #homeWorksList {
   width: 100%;
   padding-top: 15px; }
+  #homeWorksList .buttonHW {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: pink;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    border: 1px #7614c9 solid;
+    box-shadow: -1px 2px 17px 0px rgba(154, 13, 123, 0.63); }
+    #homeWorksList .buttonHW:hover {
+      background-color: #9fcdff;
+      transition: 0.3s ease-in-out;
+      transform: scale(1.03) translateY(-5px);
+      border-color: darkblue; }
+  #homeWorksList .buttonHover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 30px;
+    position: relative; }
+    #homeWorksList .buttonHover:after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 90%;
+      left: 5%;
+      background-color: #d569e5;
+      bottom: 0;
+      position: absolute;
+      margin-bottom: 10px; }
   #homeWorksList .Item {
     padding: 10px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    animation: startBlock 1s linear; }
+    #homeWorksList .Item:nth-child(2) {
+      animation: startBlock 1.3s linear; }
+    #homeWorksList .Item:nth-child(3) {
+      animation: startBlock 1.6s linear; }
+    #homeWorksList .Item:nth-child(4) {
+      animation: startBlock 1.9s linear; }
+    #homeWorksList .Item:nth-child(5) {
+      animation: startBlock 2.2s linear; }
+    #homeWorksList .Item:nth-child(6) {
+      animation: startBlock 2.5s linear; }
+    #homeWorksList .Item:hover {
+      text-decoration: none; }
+  #homeWorksList .homeWorksPagesMainScreen {
+    width: 90%;
+    margin-left: 5%; }
+    #homeWorksList .homeWorksPagesMainScreen a {
+      margin-bottom: 5px; }
   #homeWorksList a {
     display: block;
-    color: white; }
+    color: white;
+    width: 100%;
+    text-decoration: none; }
     #homeWorksList a:hover {
-      text-decoration: none; }
-    #homeWorksList a span {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 10px 0;
-      background-color: pink;
-      font-size: 30px;
-      border-radius: 15px;
-      border: 1px #7614c9 solid;
-      box-shadow: -1px 2px 17px 0px rgba(154, 13, 123, 0.63); }
-      #homeWorksList a span:hover {
-        background-color: #9fcdff;
-        transition: 0.3s ease-in-out;
-        transform: scale(1.03) translateY(-5px);
-        border-color: darkblue; }
+      color: pink; }
 
 /* drop menu part1*/
 #toggle_part1 {
@@ -320,5 +356,10 @@ h2 {
       top: 0;
       right: 0;
       z-index: 2; } }
+@keyframes startBlock {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 /*# sourceMappingURL=style.css.map */

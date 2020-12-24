@@ -141,35 +141,81 @@ section{
 #homeWorksList {
   width: 100%;
   padding-top: 15px;
+  .buttonHW{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: pink;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    border: 1px #7614c9 solid;
+    box-shadow: -1px 2px 17px 0px rgba(154,13,123,0.63);
+    &:hover{
+      background-color: #9fcdff;
+      transition: 0.3s ease-in-out;
+      transform: scale(1.03) translateY(-5px);
+      border-color: darkblue;
+    }
+  }
+  .buttonHover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 30px;
+    position: relative;
+    &:after{
+      content: "";
+      display: block;
+      height: 2px;
+      width: 90%;
+      left: 5%;
+      background-color: #d569e5;
+      bottom: 0;
+      position: absolute;
+      margin-bottom: 10px;
+    }
+  }
   .Item{
     padding: 10px;
     margin-bottom: 10px;
+    animation: startBlock 1s linear;
+    &:nth-child(2){
+      animation: startBlock 1.3s linear;
+    }
+    &:nth-child(3){
+      animation: startBlock 1.6s linear;
+    }
+    &:nth-child(4){
+      animation: startBlock 1.9s linear;
+    }
+    &:nth-child(5){
+      animation: startBlock 2.2s linear;
+    }
+    &:nth-child(6){
+      animation: startBlock 2.5s linear;
+    }
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  .homeWorksPagesMainScreen{
+    width: 90%;
+    margin-left: 5%;
+    a{
+      margin-bottom: 5px;
+    }
   }
   a{
     display: block;
     color: white;
+    width: 100%;
+    text-decoration: none;
     &:hover{
-      text-decoration: none;
+      color: pink;
     }
-    span{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 10px 0;
-      background-color: pink;
-      font-size: 30px;
-      border-radius: 15px;
-      border: 1px #7614c9 solid;
-      box-shadow: -1px 2px 17px 0px rgba(154,13,123,0.63);
-      &:hover{
-        background-color: #9fcdff;
-        transition: 0.3s ease-in-out;
-        transform: scale(1.03) translateY(-5px);
-        border-color: darkblue;
-      }
     }
   }
-}
 
 /* drop menu part1*/
 
@@ -372,4 +418,14 @@ h2{
         }
       }}
   }
+}
+
+@keyframes startBlock {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+  
 }
