@@ -1,0 +1,83 @@
+@import url(../../../../../fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css);
+* {
+  box-sizing: border-box; }
+
+body {
+  padding-top: 50px; }
+
+.Line {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .Line .TopBlock {
+    margin: auto;
+    width: 40%; }
+  .Line:first-of-type {
+    margin-bottom: 40px; }
+    .Line:first-of-type div:first-of-type h1 {
+      text-align: center;
+      display: block;
+      margin-bottom: 10px;
+      font-size: 30px; }
+    .Line:first-of-type div:first-of-type span {
+      color: darkgrey;
+      display: block;
+      text-align: center;
+      margin-bottom: 8px;
+      font-size: 16px; }
+    .Line:first-of-type div:first-of-type p {
+      text-align: center;
+      color: darkgrey;
+      font-size: 12px; }
+  .Line:nth-child(2) i {
+    font-size: 80px;
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+    color: #80bdff; }
+  .Line:nth-child(2) div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .Line:nth-child(2) div:first-of-type i {
+      color: mediumpurple; }
+    .Line:nth-child(2) div:last-of-type i {
+      color: pink; }
+  .Line:nth-child(2) p {
+    text-align: center;
+    color: darkgrey;
+    font-size: 12px; }
+  .Line:nth-child(2) span {
+    color: darkgrey;
+    display: block;
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: bolder; }
+
+@media all and (max-width: 750px) {
+  .mobilSize {
+    width: 100%;
+    padding: 15px; } }
+
+.fullSize {
+  width: 33.333%;
+  padding: 15px; }
+
+.buttonN a {
+  display: block;
+  color: white;
+  font-size: 20px;
+  padding: 13px;
+  background-color: mediumspringgreen;
+  margin: auto;
+  text-decoration: none;
+  width: 150px;
+  text-align: center;
+  border-radius: 15px; }
+  .buttonN a:hover {
+    background-color: #80bdff;
+    transform: scale(1.1);
+    transition: 0.6s ease-in-out; }
+
+/*# sourceMappingURL=style.css.map */
