@@ -88,7 +88,6 @@ header{
 section{
 .LeftColumn{
   height: 80vh;
-  position: relative;
   padding: 15px;
   &:after{
     content: "";
@@ -129,7 +128,7 @@ section{
 .RightColumn{
   width: 80%;
   height: auto;
-  padding: 80px 20px 10px 80px;
+  padding: 60px 20px 10px 60px;
   iframe{
     width: 100%;
     height: 100%;
@@ -180,7 +179,11 @@ section{
   &:after{
     content: 'f0dd';
     font-family: 'Font Awesome 5 Free';
-    
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    width: 20px;
+    height: 20px;
   }
 }
 #toggle_part1:checked~#drop_punkt_part1{
@@ -228,9 +231,6 @@ h2{
   }
   li{
     font-size: 12px;
-    &:active{
-      transform: none;
-    }
   }
   #TogglerButtonCheckBox{
     display: block;
@@ -241,30 +241,30 @@ h2{
     color: white;
   }
   #toglerrButton:checked~.DropDownMenuFull{
-    position: fixed;
+    position: absolute;
     visibility: visible;
     top: 0;
     left: 0;
-    width: 300px;
+    width: 70%;
     background-color: #f5eaff;
     height: 100vh;
     transition: 0.8s;
-    z-index: 2;
-    padding-left: 20px;
-    padding-top: 15px;
+    z-index: 1;
+    padding: 15px 15px 20px;
   }
   #toglerrButton:checked ~ #TogglerButtonCheckBox{
+    position: relative;
     i{display: none}}
   #toglerrButton:checked ~ #TogglerButtonCheckBox:after {
     content: "\f057";
     font-family: 'Font Awesome 5 Free';
-    font-size: 40px;
-    color: white;
+    font-size: 60px;
+    color: darkgrey;
     display: block;
-    height: 80px;
-    position: fixed;
-    top: 15px;
-    right: 10px;
+    height: 60px;
+    position: absolute;
+    top: -60px;
+    left: -10px;
     z-index: 3 !important;
   }
   .DropDownMenuFull{
@@ -275,7 +275,7 @@ h2{
   &:after{
     content: '';
     background-color: #f5eaff;
-    height: 8px;
+    height: 4px;
     width: 94%;
     left: 3%;
     position: absolute;
@@ -283,17 +283,24 @@ h2{
   }}
   section{
   .LeftColumn{
-    position: relative;
     padding-left: 20px;
+    height: 50px;
+    position: relative;
     &:after{
       display: none;
     }
-  }}
+  }
+    .RightColumn{
+      padding: 15px 10px;
+      height: 80vh;
+    }
+  }
   .AboutHomeWork{
     display: block;
     width: 100%;
     position: relative;
     margin-bottom: 5px;
+    margin-top: 70px;
     &:after{
       width: 80%;
       height: 2px;
@@ -302,5 +309,67 @@ h2{
       left: 10%;
       margin-bottom: 10px;
     }
+  }
+  header{
+    .row{
+      .NameWork{
+        display: none;
+      }
+      .numberWork{display: none}
+      .ALevelLogo{
+        position: relative;
+        right: 20px;
+        top: 20px;
+        p{
+          font-size: 45px;
+        }
+
+      }}
+    }
+}
+@media all and (max-width: 300px){
+  #toglerrButton:checked~.DropDownMenuFull{
+    width: 100%;
+  }
+  header{
+    .row{
+      .ALevelLogo{
+        p{
+          font-size: 30px;
+        }
+        &>div{
+          background-color: #270742;
+          height: 60px;
+          width: 140px;
+          position: relative;
+          z-index: 0;
+          display: flex;
+          align-items: flex-end;
+          justify-content: flex-start;
+          padding: 0 10px;
+          &:after{
+            content: '';
+            display: block;
+            width: 40px;
+            height: 40px;
+            background-color: #270742;
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            z-index: 1;
+          }
+          &:before{
+            content: '';
+            display: block;
+            width: 20px;
+            height: 20px;
+            background-color: #7614c9;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 2;
+          }
+        }
+      }}
   }
 }

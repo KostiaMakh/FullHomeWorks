@@ -10,55 +10,72 @@
 
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-4">
-                    <h1>Homework</h1>
-                </div>
-                <div class="col-4 ALevelLogo">
-                    <div>
-                        <p>A-Level</p>
-                    </div>
-                </div>
-                <div class="col-4 numberWork">
-                    <span>1</span>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-4 NameWork">
+                <h1>Homework</h1>
+            </div>
+            <div class="col-10 col-sm-4 offset-1 offset-sm-0 ALevelLogo">
+                <div>
+                    <p>A-Level</p>
                 </div>
             </div>
+            <div class="col-4 numberWork">
+                <span>1</span>
+            </div>
         </div>
-    </header>
-    <section>
-        <div class="LeftColumn">
-            <a class="prewPage" href="../Index.html"><i class="fas fa-arrow-left"></i> All works</a>
-            <h2>Part 1 (class)</h2>
-            <ul>
-                <li onclick="openCity(event, 'HW1_1_1')" class="tablinks">Task 1</li>
-                <li onclick="openCity(event, 'HW1_1_2')" class="tablinks">Task 2</li>
-                <li onclick="openCity(event, 'HW1_1_3')" class="tablinks">Task 3</li>
-            </ul>
-            <h2>Part 2 (home)</h2>
-            <ul>
-                <li onclick="openCity(event, 'HW1_2_1')" class="tablinks">Task 1</li>
-                <li onclick="openCity(event, 'HW1_2_2')" class="tablinks">Task 2</li>
-                <li>Task 3</li>
-                <ul class="innerList">
-                    <li onclick="openCity(event, 'HW1_2_3_1')" class="tablinks">Block</li>
-                    <li onclick="openCity(event, 'HW1_2_3_2')" class="tablinks">Flex</li>
-                    <li onclick="openCity(event, 'HW1_2_3_3')" class="tablinks">Table</li>
-                </ul>
-            </ul>
+    </div>
+</header>
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="LeftColumn col-12 col-sm-4 col-xl-2">
+                <a class="prewPage" href="../Index.html"><i class="fas fa-arrow-left"></i> All works</a>
+                <input type="checkbox" id="toglerrButton">
+                <label id="TogglerButtonCheckBox" for="toglerrButton" class="col-3"><i class="fas fa-bars"></i></label>
+                <div class="DropDownMenuFull">
+                    <div class="AboutHomeWork">
+                        <h3>Home Work 1</h3>
+                    </div>
+                    <div class="homeWork_park1">
+                        <input type="checkbox" id="toggle_part1">
+                        <label for="toggle_part1"><h2>Part 1 (class)</h2></label>
+                        <ul id="drop_punkt_part1">
+                                <li onclick="openCity(event, 'HW1_1_1')" class="tablinks">Task 1</li>
+                                <li onclick="openCity(event, 'HW1_1_2')" class="tablinks">Task 2</li>
+                                <li onclick="openCity(event, 'HW1_1_3')" class="tablinks">Task 3</li>
+                        </ul>
+                    </div>
+                    <div class="homeWork_park2">
+                        <input type="checkbox" id="toggle_part2">
+                        <label for="toggle_part2"><h2>Part 2 (home)</h2></label>
+                        <ul id="drop_punkt_part2">
+                            <li onclick="openCity(event, 'HW1_2_1')" class="tablinks">Task 1</li>
+                            <li onclick="openCity(event, 'HW1_2_2')" class="tablinks">Task 2</li>
+                            <li>Task 3</li>
+                            <ul class="innerList">
+                                <li onclick="openCity(event, 'HW1_2_3_1')" class="tablinks">Block</li>
+                                <li onclick="openCity(event, 'HW1_2_3_2')" class="tablinks">Flex</li>
+                                <li onclick="openCity(event, 'HW1_2_3_3')" class="tablinks">Table</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="RightColumn col-12 col-sm-8 col-xl-10">
+                <iframe src="../docs/HW1/Part1/Task1/Index.html" id="HW1_1_1" class="tabcontent"></iframe>
+                <iframe src="../docs/HW1/Part1/Task2/Index.html" id="HW1_1_2" class="tabcontent"></iframe>
+                <iframe src="../docs/HW1/Part1/Task3/Index.html" id="HW1_1_3" class="tabcontent"></iframe>
+                <iframe src="../docs/HW1/Part2/Task1/nginx_fixed.html" id="HW1_2_1" class="tabcontent"></iframe>
+                <iframe src="../docs/HW1/Part2/Task2/html5.html" id="HW1_2_2" class="tabcontent"></iframe>
+                <iframe src="../docs/HW1/Part2/Task3/block/layout_block.html" id="HW1_2_3_1" class="tabcontent"></iframe>
+                <iframe src="../docs/HW1/Part2/Task3/Flex/layout_flex.html" id="HW1_2_3_2" class="tabcontent"></iframe>
+                <iframe src="../docs/HW1/Part2/Task3/table/layout_table.html" id="HW1_2_3_3" class="tabcontent"></iframe>
+            </div>
         </div>
-        <div class="RightColumn">
-            <iframe src="../docs/HW1/Part1/Task1/Index.html" id="HW1_1_1" class="tabcontent"></iframe>
-            <iframe src="../docs/HW1/Part1/Task2/Index.html" id="HW1_1_2" class="tabcontent"></iframe>
-            <iframe src="../docs/HW1/Part1/Task3/Index.html" id="HW1_1_3" class="tabcontent"></iframe>
-            <iframe src="../docs/HW1/Part2/Task1/nginx_fixed.html" id="HW1_2_1" class="tabcontent"></iframe>
-            <iframe src="../docs/HW1/Part2/Task2/html5.html" id="HW1_2_2" class="tabcontent"></iframe>
-            <iframe src="../docs/HW1/Part2/Task3/block/layout_block.html" id="HW1_2_3_1" class="tabcontent"></iframe>
-            <iframe src="../docs/HW1/Part2/Task3/Flex/layout_flex.html" id="HW1_2_3_2" class="tabcontent"></iframe>
-            <iframe src="../docs/HW1/Part2/Task3/table/layout_table.html" id="HW1_2_3_3" class="tabcontent"></iframe>
-        </div>
-    </section>
+    </div>
+</section>
     <script src="http://code.jquery.com/jquery-3.5.1.slim.js"></script>
     <script src="../js/bootstrap.js"></script>
     <script src="../js/script.js"></script>

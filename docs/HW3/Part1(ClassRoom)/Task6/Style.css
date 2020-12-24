@@ -1,0 +1,68 @@
+body{
+    color: darkviolet;
+}
+section{
+    width: 500px;
+    height: 300px;
+    border: 2px darkgray dotted;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+}
+section:last-of-type{
+    overflow-y: unset;
+    height: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.mainContent{
+    padding: 15px;
+    position: relative;
+    border: 2px violet solid;
+    border-right: none;
+    border-radius: 30px;
+}
+p{
+    font-size: 16px;
+}
+#btn{
+    width: 100%;
+    height: 40px;
+    background-color: violet;
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#btn:hover{
+    background-color: chartreuse;
+    color: red;
+    transition: 0.5s;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#TraficLight{
+    width: 100px;
+    height: 100%;
+    border: 2px solid black;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+#TraficLight div.light{
+    background-color: yellow;
+    height: 70px;
+    width: 70px;
+    margin: 10px auto 5px;
+    border-radius: 50%;
+}
+#TraficLight div.light:first-of-type{
+    background-color: red;
+
+}
+#TraficLight div.light:last-of-type{
+    background-color: green;
+}
