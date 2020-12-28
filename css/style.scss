@@ -156,11 +156,9 @@ section {
     }
   }
 }
-
 #homeWorksList {
   width: 100%;
   padding-top: 15px;
-
   .buttonHW {
     display: flex;
     align-items: center;
@@ -170,7 +168,6 @@ section {
     border-radius: 15px;
     border: 1px #7614c9 solid;
     box-shadow: -1px 2px 17px 0px rgba(154, 13, 123, 0.63);
-
     &:hover {
       background-color: #9fcdff;
       transition: 0.3s ease-in-out;
@@ -178,7 +175,6 @@ section {
       border-color: darkblue;
     }
   }
-
   .buttonHover {
     display: flex;
     justify-content: center;
@@ -186,7 +182,6 @@ section {
     padding: 10px 0;
     font-size: 30px;
     position: relative;
-
     &:after {
       content: "";
       display: block;
@@ -199,7 +194,6 @@ section {
       margin-bottom: 10px;
     }
   }
-
   .Item {
     padding: 10px;
     margin-bottom: 10px;
@@ -220,12 +214,37 @@ section {
       &:nth-child(6) {
         animation: startBlock 2.5s linear;
       }
+      &:nth-child(7) {
+        animation: startBlock 2.8s linear;
+      }
+      &:nth-child(8) {
+        animation: startBlock 3.1s linear;
+      }
       &:hover {
         text-decoration: none;
       }
     }
   }
-
+  #MP_Module1{
+    .buttonHW {
+      background-color: #20c997;
+      border-color: darkgreen;
+      &:hover{
+        background-color: #9fcdff;
+        transition: 0.3s ease-in-out;
+        transform: scale(1.03) translateY(-5px);
+        border-color: darkblue;
+      }
+      .buttonHover{
+        &:after{
+          background-color: darkgreen;
+          &:hover{
+            border-color: darkblue;
+          }
+        }
+      }
+    }
+  }
   .homeWorksPagesMainScreen {
     width: 90%;
     margin-left: 5%;

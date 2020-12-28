@@ -1,0 +1,75 @@
+@import url(../fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css);
+@import url(bootstrap.css);
+@import url(bootstrap-grid.css);
+@import url(bootstrap-reboot.css);
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px; }
+  @media screen and (max-width: 766px) {
+    * {
+      font-size: 14px; } }
+
+.GorTourBlock {
+  padding: 54px 0 110px; }
+  @media screen and (max-width: 766px) {
+    .GorTourBlock {
+      padding: 15px 0 30px; } }
+  .GorTourBlock .tourImgBlock {
+    height: 215px;
+    background-color: #0c5460;
+    margin-bottom: 25px; }
+  @media screen and (max-width: 766px) {
+    .GorTourBlock .ProposalAbout {
+      margin-bottom: 20px; } }
+  .GorTourBlock .btn {
+    background-color: #410E54;
+    color: white;
+    box-sizing: border-box; }
+
+h2 {
+  text-align: center;
+  margin-bottom: 55px;
+  font-size: 20px;
+  color: #410E54;
+  display: block; }
+  @media screen and (max-width: 766px) {
+    h2 {
+      margin-bottom: 20px; } }
+
+.tourSection {
+  background-image: url("../images/mainBG.jpg");
+  background-size: cover; }
+  .tourSection .BackGroundBlock {
+    padding-top: 24px;
+    padding-bottom: 230px; }
+    .tourSection .BackGroundBlock .count {
+      max-width: 173px;
+      height: 156px;
+      background: rgba(30, 6, 33, 0.33);
+      margin: 0 auto 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 50px;
+      color: white; }
+      @media screen and (max-width: 766px) {
+        .tourSection .BackGroundBlock .count {
+          margin-bottom: 20px; } }
+    .tourSection .BackGroundBlock .ourBenefits {
+      background: rgba(30, 6, 33, 0.33);
+      width: 100%;
+      padding: 25px;
+      color: white;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      font-size: 20px; }
+  .tourSection .Item {
+    margin-bottom: 20px; }
+
+/*# sourceMappingURL=style.css.map */

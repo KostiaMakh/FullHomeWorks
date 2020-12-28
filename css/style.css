@@ -165,8 +165,24 @@ section .RightColumn {
           animation: startBlock 2.2s linear; }
         #homeWorksList .Item:nth-child(6) {
           animation: startBlock 2.5s linear; }
+        #homeWorksList .Item:nth-child(7) {
+          animation: startBlock 2.8s linear; }
+        #homeWorksList .Item:nth-child(8) {
+          animation: startBlock 3.1s linear; }
         #homeWorksList .Item:hover {
           text-decoration: none; } }
+  #homeWorksList #MP_Module1 .buttonHW {
+    background-color: #20c997;
+    border-color: darkgreen; }
+    #homeWorksList #MP_Module1 .buttonHW:hover {
+      background-color: #9fcdff;
+      transition: 0.3s ease-in-out;
+      transform: scale(1.03) translateY(-5px);
+      border-color: darkblue; }
+    #homeWorksList #MP_Module1 .buttonHW .buttonHover:after {
+      background-color: darkgreen; }
+      #homeWorksList #MP_Module1 .buttonHW .buttonHover:after:hover {
+        border-color: darkblue; }
   #homeWorksList .homeWorksPagesMainScreen {
     width: 90%;
     margin-left: 5%; }
