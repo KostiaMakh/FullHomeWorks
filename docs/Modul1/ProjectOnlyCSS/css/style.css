@@ -141,9 +141,12 @@ h2 {
     flex-wrap: wrap;
     width: 32%; }
 
+@media screen and (max-width: 1000px) {
+  * {
+    font-size: 19px; } }
 @media screen and (max-width: 900px) {
   * {
-    font-size: 18px; }
+    font-size: 17px; }
 
   h2 {
     margin-bottom: 20px; }
@@ -158,7 +161,7 @@ h2 {
         display: none; }
       .lastMinTur .specialProposal .proposalContainer {
         padding: 0 15px;
-        width: 30%; }
+        width: 33.3%; }
         .lastMinTur .specialProposal .proposalContainer .proposalPhoto {
           margin-bottom: 10px; }
         .lastMinTur .specialProposal .proposalContainer span {
