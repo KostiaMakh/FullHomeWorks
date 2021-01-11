@@ -1,0 +1,32 @@
+@import "bootstrap.css";
+@import "bootstrap-grid.css";
+@import "bootstrap-reboot.css";
+
+.row{
+  &:nth-child(3){
+    div{
+      &:first-of-type{
+        background-color: #eaabab;
+      }
+      &:nth-child(2){
+      background-color: #d55757;
+    }
+    }
+  }
+  &:last-of-type{
+    div{
+      &:first-of-type{
+        background-color: #dbcbe7;
+      }
+      &:nth-child(2){
+        background-color: #b898d0;
+      }
+      &:nth-child(3){
+        background-color: #9464b8;
+      }
+      &:last-of-type{
+        background-color: #7030a0;
+      }
+    }
+  }
+}
