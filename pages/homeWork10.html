@@ -39,15 +39,28 @@
                     </div>
                     <div class="homeWork_park1">
                         <input type="checkbox" id="toggle_part1">
-                        <label for="toggle_part1">Bootstrap</label>
+                        <label for="toggle_part1"  class="dropdownMenuSymbol">Part 1 (class)</label>
                         <ul id="drop_punkt_part1">
                             <li onclick="openCity(event, 'HW10_1_1')" class="tablinks">Task 1</li>
                         </ul>
                     </div>
+                    <div class="homeWork_park2">
+                        <input type="checkbox" id="toggle_part2">
+                        <label for="toggle_part2" class="dropdownMenuSymbol">Part 2 (HW)</label>
+                        <ul id="drop_punkt_part2">
+                            <li onclick="openCity(event, 'HW10_2_1')" class="tablinks">Первый уровень ("Required")</li>
+                            <li onclick="openCity(event, 'HW10_2_2')" class="tablinks">Второй уровень ("")</li>
+                            <li onclick="openCity(event, 'HW10_2_3')" class="tablinks">Третий уровень ("Additionally")</li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
             <div class="RightColumn col-12 col-sm-8 col-xl-10">
-                <iframe src="../docs/HW10/index.html" id="HW10_1_1" class="tabcontent"></iframe>
+                <iframe src="../docs/HW10/Part1(ClassRoom)/index.html" id="HW10_1_1" class="tabcontent"></iframe>
+                <iframe src="../docs/HW10/Part2/Task1/index.html" id="HW10_2_1" class="tabcontent"></iframe>
+                <iframe src="../docs/HW10/Part2/Task2/index.html" id="HW10_2_2" class="tabcontent"></iframe>
+                <iframe src="../docs/HW10/Part2/Task3/index.html" id="HW10_2_3" class="tabcontent"></iframe>
             </div>
         </div>
     </div>

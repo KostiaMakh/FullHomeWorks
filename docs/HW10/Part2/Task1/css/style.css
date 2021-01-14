@@ -1,0 +1,17 @@
+@import url(bootstrap.css);
+@import url(bootstrap-grid.css);
+@import url(bootstrap-reboot.css);
+.row:nth-child(3) div:first-of-type {
+  background-color: #eaabab; }
+.row:nth-child(3) div:nth-child(2) {
+  background-color: #d55757; }
+.row:last-of-type div:first-of-type {
+  background-color: #dbcbe7; }
+.row:last-of-type div:nth-child(2) {
+  background-color: #b898d0; }
+.row:last-of-type div:nth-child(3) {
+  background-color: #9464b8; }
+.row:last-of-type div:last-of-type {
+  background-color: #7030a0; }
+
+/*# sourceMappingURL=style.css.map */
