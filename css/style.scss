@@ -156,9 +156,11 @@ section {
     }
   }
 }
+
 #homeWorksList {
   width: 100%;
   padding-top: 15px;
+
   .buttonHW {
     display: flex;
     align-items: center;
@@ -168,6 +170,7 @@ section {
     border-radius: 15px;
     border: 1px #7614c9 solid;
     box-shadow: -1px 2px 17px 0px rgba(154, 13, 123, 0.63);
+
     &:hover {
       background-color: #9fcdff;
       transition: 0.3s ease-in-out;
@@ -175,13 +178,15 @@ section {
       border-color: darkblue;
     }
   }
+
   .buttonHover {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px 0;
-    font-size: 30px;
+    font-size: 26px;
     position: relative;
+
     &:after {
       content: "";
       display: block;
@@ -194,366 +199,432 @@ section {
       margin-bottom: 10px;
     }
   }
+
   .Item {
     padding: 10px;
     margin-bottom: 10px;
-    @media screen and (min-width: 575px) {
-      animation: startBlock 0.5s linear;
-      &:nth-child(2) {
-        animation: startBlock 0.6s linear;
-      }
-      &:nth-child(3) {
-        animation: startBlock 0.7s linear;
-      }
-      &:nth-child(4) {
-        animation: startBlock 0.8s linear;
-      }
-      &:nth-child(5) {
-        animation: startBlock 0.9s linear;
-      }
-      &:nth-child(6) {
-        animation: startBlock 1s linear;
-      }
-      &:nth-child(7) {
-        animation: startBlock 1.1s linear;
-      }
-      &:nth-child(8) {
-        animation: startBlock 1.2s linear;
-      }
-      &:nth-child(9) {
-        animation: startBlock 1.3s linear;
-      }
-      &:last-of-type {
-        animation: startBlock 1.4s linear;
-      }
-      &:hover {
-        text-decoration: none;
+
+    /*step-by-step appearance of blocks*/
+
+    #htmlBlockMainPage {
+      @media screen and (min-width: 575px) {
+        animation: startBlock 0.5s linear;
+        &:nth-child(2) {
+          animation: startBlock 0.6s linear;
+        }
+        &:nth-child(3) {
+          animation: startBlock 0.7s linear;
+        }
+        &:nth-child(4) {
+          animation: startBlock 0.8s linear;
+        }
+        &:nth-child(5) {
+          animation: startBlock 0.9s linear;
+        }
+        &:nth-child(6) {
+          animation: startBlock 1s linear;
+        }
+        &:nth-child(7) {
+          animation: startBlock 1.1s linear;
+        }
+        &:nth-child(8) {
+          animation: startBlock 1.2s linear;
+        }
+        &:nth-child(9) {
+          animation: startBlock 1.3s linear;
+        }
+        &:last-of-type {
+          animation: startBlock 1.4s linear;
+        }
+        &:hover {
+          text-decoration: none;
+        }
       }
     }
   }
-  #MP_Module1{
+    #MP_Module1 {
     .buttonHW {
       background-color: burlywood;
       border-color: #7614c9;
-      &:hover{
+
+      &:hover {
         background-color: #9fcdff;
         transition: 0.3s ease-in-out;
         transform: scale(1.03) translateY(-5px);
         border-color: darkblue;
       }
-      .buttonHover{
-        &:after{
-          background-color: #7614c9 ;
-          &:hover{
+
+      .buttonHover {
+        &:after {
+          background-color: #7614c9;
+
+          &:hover {
             border-color: darkblue;
           }
         }
       }
     }
   }
-  .homeWorksPagesMainScreen {
-    width: 90%;
-    margin-left: 5%;
+
+    .homeWorksPagesMainScreen {
+      width: 90%;
+      margin-left: 5%;
+
+      a {
+        margin-bottom: 5px;
+      }
+    }
+
     a {
-      margin-bottom: 5px;
+      display: block;
+      color: white;
+      width: 100%;
+      text-decoration: none;
+
+      &:hover {
+        color: blueviolet;
+        transition: 0.3S ease-in-out;
+      }
     }
   }
-  a {
-    display: block;
-    color: white;
-    width: 100%;
-    text-decoration: none;
 
-    &:hover {
-      color: blueviolet;
-      transition: 0.3S ease-in-out;
-    }
-  }
-}
-/*rotate sort-down menu symbol*/
-.dropdownMenuSymbol{
-  position: relative;
-  display: block;
-  width: 100%;
-  cursor: pointer;
-  &:after{
-    position: absolute;
-    display: block;
-    content: "\f150";
-    height: 18px;
-    width: 18px;
-    font-family: 'Font Awesome 5 Free';
-    right: 10px;
-    top: 10%;
-  }
-}
-
-
-/* drop menu part1*/
-#toggle_part1 {
-  display: none;
-  position: relative;
-
-  &:after {
-    content: 'f0dd';
-    font-family: 'Font Awesome 5 Free';
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    width: 20px;
-    height: 20px;
-  }
-}
-#toggle_part1:checked ~ #drop_punkt_part1 {
-  display: block;
-}
-
-#drop_punkt_part1 {
-  display: none;
-  cursor: pointer;
-}
-/* drop menu part3*/
-#toggle_part3 {
-  display: none;
-  position: relative;
-
-  &:after {
-    content: 'f0dd';
-    font-family: 'Font Awesome 5 Free';
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    width: 20px;
-    height: 20px;
-  }
-}
-#toggle_part3:checked ~ #drop_punkt_part3 {
-  display: block;
-}
-
-#drop_punkt_part3 {
-  display: none;
-  cursor: pointer;
-}
-/* drop menu part2*/
-
-#toggle_part2 {
-  display: none;
-}
-
-#toggle_part2:checked ~ #drop_punkt_part2 {
-  display: block;
-}
-
-#drop_punkt_part2 {
-  display: none;
-}
-
-.prewPage {
-  width: 100%;
-  display: block;
-  margin-bottom: 15px;
-  text-decoration: none;
-  color: black;
-
-  i {
-    color: #e58e69;
-    font-size: 20px;
-    padding-right: 20px;
-  }
-}
-
-#DropDownMenuFull{
-label{
-  font-size: 20px;
-&:hover{
-  cursor: pointer;
-}}
-}
-
-#toglerrButton, #TogglerButtonCheckBox {
-  display: none;
-}
-
-.AboutHomeWork {
-  display: none;
-}
-
-@media all and (max-width: 575px) {
-  h2 {
-    font-size: 14px;
-  }
-  li {
-    font-size: 12px;
-  }
-  #TogglerButtonCheckBox {
-    display: block;
-    position: fixed;
-    left: 10px;
-    top: 10px;
-    font-size: 30px;
-    color: white;
-  }
-  #toglerrButton:checked ~ .DropDownMenuFull {
-    position: absolute;
-    visibility: visible;
-    top: 0;
-    left: 0;
-    width: 70%;
-    background-color: #f5eaff;
-    height: 100vh;
-    transition: 0.8s;
-    z-index: 1;
-    padding: 15px 15px 20px;
-  }
-  #toglerrButton:checked ~ #TogglerButtonCheckBox {
+  /*rotate sort-down menu symbol*/
+  .dropdownMenuSymbol {
     position: relative;
+    display: block;
+    width: 100%;
+    cursor: pointer;
 
-    i {
-      display: none
+    &:after {
+      position: absolute;
+      display: block;
+      content: "\f150";
+      height: 18px;
+      width: 18px;
+      font-family: 'Font Awesome 5 Free';
+      right: 10px;
+      top: 10%;
     }
   }
-  #toglerrButton:checked ~ #TogglerButtonCheckBox:after {
-    content: "\f057";
-    font-family: 'Font Awesome 5 Free';
-    font-size: 60px;
-    color: darkgrey;
-    display: block;
-    height: 60px;
-    position: absolute;
-    top: -60px;
-    left: -10px;
-    z-index: 3 !important;
-  }
-  .DropDownMenuFull {
-    visibility: hidden;
-  }
-  .prewPage {
+
+
+  /* drop menu part1*/
+  #toggle_part1 {
+    display: none;
     position: relative;
 
     &:after {
-      content: '';
-      background-color: #f5eaff;
-      height: 4px;
-      width: 94%;
-      left: 3%;
+      content: 'f0dd';
+      font-family: 'Font Awesome 5 Free';
       position: absolute;
-      bottom: -10px;
+      right: 20px;
+      top: 50%;
+      width: 20px;
+      height: 20px;
     }
   }
-  section {
-    .LeftColumn {
-      padding-left: 20px;
-      height: 50px;
+
+  #toggle_part1:checked ~ #drop_punkt_part1 {
+    display: block;
+  }
+
+  #drop_punkt_part1 {
+    display: none;
+    cursor: pointer;
+  }
+
+  /* drop menu part3*/
+  #toggle_part3 {
+    display: none;
+    position: relative;
+
+    &:after {
+      content: 'f0dd';
+      font-family: 'Font Awesome 5 Free';
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  #toggle_part3:checked ~ #drop_punkt_part3 {
+    display: block;
+  }
+
+  #drop_punkt_part3 {
+    display: none;
+    cursor: pointer;
+  }
+
+  /* drop menu part2*/
+
+  #toggle_part2 {
+    display: none;
+  }
+
+  #toggle_part2:checked ~ #drop_punkt_part2 {
+    display: block;
+  }
+
+  #drop_punkt_part2 {
+    display: none;
+  }
+
+  .prewPage {
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: black;
+
+    i {
+      color: #e58e69;
+      font-size: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  #DropDownMenuFull {
+    label {
+      font-size: 20px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  #toglerrButton, #TogglerButtonCheckBox {
+    display: none;
+  }
+
+  .AboutHomeWork {
+    display: none;
+  }
+
+  @media all and (max-width: 575px) {
+    h2 {
+      font-size: 14px;
+    }
+    li {
+      font-size: 12px;
+    }
+    #TogglerButtonCheckBox {
+      display: block;
+      position: fixed;
+      left: 10px;
+      top: 10px;
+      font-size: 30px;
+      color: white;
+    }
+    #toglerrButton:checked ~ .DropDownMenuFull {
+      position: absolute;
+      visibility: visible;
+      top: 0;
+      left: 0;
+      width: 70%;
+      background-color: #f5eaff;
+      height: 100vh;
+      transition: 0.8s;
+      z-index: 1;
+      padding: 15px 15px 20px;
+    }
+    #toglerrButton:checked ~ #TogglerButtonCheckBox {
+      position: relative;
+
+      i {
+        display: none
+      }
+    }
+    #toglerrButton:checked ~ #TogglerButtonCheckBox:after {
+      content: "\f057";
+      font-family: 'Font Awesome 5 Free';
+      font-size: 60px;
+      color: darkgrey;
+      display: block;
+      height: 60px;
+      position: absolute;
+      top: -60px;
+      left: -10px;
+      z-index: 3 !important;
+    }
+    .DropDownMenuFull {
+      visibility: hidden;
+    }
+    .prewPage {
       position: relative;
 
       &:after {
-        display: none;
+        content: '';
+        background-color: #f5eaff;
+        height: 4px;
+        width: 94%;
+        left: 3%;
+        position: absolute;
+        bottom: -10px;
       }
     }
-
-    .RightColumn {
-      padding: 15px 10px;
-      height: 80vh;
-    }
-  }
-  .AboutHomeWork {
-    display: block;
-    width: 100%;
-    position: relative;
-    margin-bottom: 5px;
-    margin-top: 70px;
-
-    &:after {
-      width: 80%;
-      height: 2px;
-      background-color: #7614c9;
-      bottom: 0;
-      left: 10%;
-      margin-bottom: 10px;
-    }
-  }
-  header {
-    .row {
-      .NameWork {
-        display: none;
-      }
-
-      .numberWork {
-        display: none
-      }
-
-      .ALevelLogo {
+    section {
+      .LeftColumn {
+        padding-left: 20px;
+        height: 50px;
         position: relative;
-        right: 20px;
-        top: 20px;
 
-        p {
-          font-size: 45px;
+        &:after {
+          display: none;
         }
+      }
 
+      .RightColumn {
+        padding: 15px 10px;
+        height: 80vh;
       }
     }
-  }
-}
+    .AboutHomeWork {
+      display: block;
+      width: 100%;
+      position: relative;
+      margin-bottom: 5px;
+      margin-top: 70px;
 
-@media all and (max-width: 300px) {
-  #toglerrButton:checked ~ .DropDownMenuFull {
-    width: 100%;
-  }
-  header {
-    .row {
-      .ALevelLogo {
-        p {
-          font-size: 30px;
+      &:after {
+        width: 80%;
+        height: 2px;
+        background-color: #7614c9;
+        bottom: 0;
+        left: 10%;
+        margin-bottom: 10px;
+      }
+    }
+    header {
+      .row {
+        .NameWork {
+          display: none;
         }
 
-        & > div {
-          background-color: #270742;
-          height: 60px;
-          width: 140px;
+        .numberWork {
+          display: none
+        }
+
+        .ALevelLogo {
           position: relative;
-          z-index: 0;
-          display: flex;
-          align-items: flex-end;
-          justify-content: flex-start;
-          padding: 0 10px;
+          right: 20px;
+          top: 20px;
 
-          &:after {
-            content: '';
-            display: block;
-            width: 40px;
-            height: 40px;
-            background-color: #270742;
-            position: absolute;
-            top: -20px;
-            right: -20px;
-            z-index: 1;
+          p {
+            font-size: 45px;
           }
 
-          &:before {
-            content: '';
-            display: block;
-            width: 20px;
-            height: 20px;
-            background-color: #7614c9;
-            position: absolute;
-            top: 0;
-            right: 0;
-            z-index: 2;
+        }
+      }
+    }
+  }
+
+  @media all and (max-width: 300px) {
+    #toglerrButton:checked ~ .DropDownMenuFull {
+      width: 100%;
+    }
+    header {
+      .row {
+        .ALevelLogo {
+          p {
+            font-size: 30px;
+          }
+
+          & > div {
+            background-color: #270742;
+            height: 60px;
+            width: 140px;
+            position: relative;
+            z-index: 0;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+            padding: 0 10px;
+
+            &:after {
+              content: '';
+              display: block;
+              width: 40px;
+              height: 40px;
+              background-color: #270742;
+              position: absolute;
+              top: -20px;
+              right: -20px;
+              z-index: 1;
+            }
+
+            &:before {
+              content: '';
+              display: block;
+              width: 20px;
+              height: 20px;
+              background-color: #7614c9;
+              position: absolute;
+              top: 0;
+              right: 0;
+              z-index: 2;
+            }
           }
         }
       }
     }
   }
-}
 
-@keyframes startBlock {
-  0% {
-    opacity: 0;
+  @keyframes startBlock {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
-  100% {
-    opacity: 1;
+  /*Dropdown menu of js on main page */
+  #jsBlockMainPage {
+    background-color: coral;
+    border: 1px darkgrey solid;
+    border-radius: 10px;
+    transition: .55s opacity, .55s visibility;
+    h2 {
+      margin-top: 8px;
+      font-size: 30px;
+    }
+    .Item {
+      display: none;
+    }
+
+    &:hover {
+      background-color: transparent;
+      transition: 0.5s background-color ease-in-out;
+      padding-top: 15px;
+      .Item {
+        display: block;
+      }
+    }
   }
 
-}
+  /*Dropdown menu of html/css on main page */
+  #htmlBlockMainPage {
+    background-color: coral;
+    border: 1px darkgrey solid;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: .55s opacity, .55s visibility;
+    h2 {
+      margin-top: 8px;
+      font-size: 30px;
+    }
+    .Item {
+      display: none;
+    }
+    &:hover {
+      background-color: transparent;
+      transition: 0.5s background-color ease-in-out;
+      padding-top: 15px;
+      .Item {
+        display: block;
+      }
+    }
+  }

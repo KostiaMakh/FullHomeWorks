@@ -137,7 +137,7 @@ section .RightColumn {
     justify-content: center;
     align-items: center;
     padding: 10px 0;
-    font-size: 30px;
+    font-size: 26px;
     position: relative; }
     #homeWorksList .buttonHover:after {
       content: "";
@@ -151,29 +151,30 @@ section .RightColumn {
       margin-bottom: 10px; }
   #homeWorksList .Item {
     padding: 10px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    /*step-by-step appearance of blocks*/ }
     @media screen and (min-width: 575px) {
-      #homeWorksList .Item {
+      #homeWorksList .Item #htmlBlockMainPage {
         animation: startBlock 0.5s linear; }
-        #homeWorksList .Item:nth-child(2) {
+        #homeWorksList .Item #htmlBlockMainPage:nth-child(2) {
           animation: startBlock 0.6s linear; }
-        #homeWorksList .Item:nth-child(3) {
+        #homeWorksList .Item #htmlBlockMainPage:nth-child(3) {
           animation: startBlock 0.7s linear; }
-        #homeWorksList .Item:nth-child(4) {
+        #homeWorksList .Item #htmlBlockMainPage:nth-child(4) {
           animation: startBlock 0.8s linear; }
-        #homeWorksList .Item:nth-child(5) {
+        #homeWorksList .Item #htmlBlockMainPage:nth-child(5) {
           animation: startBlock 0.9s linear; }
-        #homeWorksList .Item:nth-child(6) {
+        #homeWorksList .Item #htmlBlockMainPage:nth-child(6) {
           animation: startBlock 1s linear; }
-        #homeWorksList .Item:nth-child(7) {
+        #homeWorksList .Item #htmlBlockMainPage:nth-child(7) {
           animation: startBlock 1.1s linear; }
-        #homeWorksList .Item:nth-child(8) {
+        #homeWorksList .Item #htmlBlockMainPage:nth-child(8) {
           animation: startBlock 1.2s linear; }
-        #homeWorksList .Item:nth-child(9) {
+        #homeWorksList .Item #htmlBlockMainPage:nth-child(9) {
           animation: startBlock 1.3s linear; }
-        #homeWorksList .Item:last-of-type {
+        #homeWorksList .Item #htmlBlockMainPage:last-of-type {
           animation: startBlock 1.4s linear; }
-        #homeWorksList .Item:hover {
+        #homeWorksList .Item #htmlBlockMainPage:hover {
           text-decoration: none; } }
   #homeWorksList #MP_Module1 .buttonHW {
     background-color: burlywood;
@@ -422,5 +423,41 @@ section .RightColumn {
     opacity: 0; }
   100% {
     opacity: 1; } }
+/*Dropdown menu of js on main page */
+#jsBlockMainPage {
+  background-color: coral;
+  border: 1px darkgrey solid;
+  border-radius: 10px;
+  transition: .55s opacity, .55s visibility; }
+  #jsBlockMainPage h2 {
+    margin-top: 8px;
+    font-size: 30px; }
+  #jsBlockMainPage .Item {
+    display: none; }
+  #jsBlockMainPage:hover {
+    background-color: transparent;
+    transition: 0.5s background-color ease-in-out;
+    padding-top: 15px; }
+    #jsBlockMainPage:hover .Item {
+      display: block; }
+
+/*Dropdown menu of html/css on main page */
+#htmlBlockMainPage {
+  background-color: coral;
+  border: 1px darkgrey solid;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: .55s opacity, .55s visibility; }
+  #htmlBlockMainPage h2 {
+    margin-top: 8px;
+    font-size: 30px; }
+  #htmlBlockMainPage .Item {
+    display: none; }
+  #htmlBlockMainPage:hover {
+    background-color: transparent;
+    transition: 0.5s background-color ease-in-out;
+    padding-top: 15px; }
+    #htmlBlockMainPage:hover .Item {
+      display: block; }
 
 /*# sourceMappingURL=style.css.map */
