@@ -23,12 +23,11 @@ section {
     justify-content: space-between; }
     section form label {
       width: 45%;
-      height: 20px;
       margin-bottom: 10px;
       display: inline-block; }
     section form input {
       width: 50%;
-      height: 20px; }
+      margin-bottom: 10px; }
     section form .buttonsBlock {
       display: flex;
       justify-content: center;
