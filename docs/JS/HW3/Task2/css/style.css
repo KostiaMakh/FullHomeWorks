@@ -20,7 +20,8 @@ section {
     border-radius: 5px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-bottom: 20px; }
     section form label {
       width: 45%;
       margin-bottom: 10px;
@@ -38,5 +39,7 @@ section {
         padding: 5px;
         border-radius: 3px;
         font-weight: bolder; }
+  section span {
+    width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

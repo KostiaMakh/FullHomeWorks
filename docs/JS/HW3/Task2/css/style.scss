@@ -24,6 +24,7 @@ section{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 20px;
     label{
       width: 45%;
       margin-bottom: 10px;
@@ -45,6 +46,9 @@ section{
         font-weight: bolder;
       }
     }
+  }
+  span{
+    width: 100%;
   }
 }
 
