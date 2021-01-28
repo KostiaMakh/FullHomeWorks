@@ -39,7 +39,8 @@ section {
         padding: 5px;
         border-radius: 3px;
         font-weight: bolder; }
-  section span {
-    width: 100%; }
+  section p {
+    width: 100%;
+    line-height: 30px; }
 
 /*# sourceMappingURL=style.css.map */
