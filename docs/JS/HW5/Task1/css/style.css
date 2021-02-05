@@ -1,0 +1,100 @@
+* {
+  font-family: Arial; }
+
+form {
+  max-width: 425px;
+  padding: 25px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #24303c;
+  justify-content: space-between; }
+  form input {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: #8e9ba4 1px solid;
+    color: #9eb5bb;
+    padding: 10px;
+    box-sizing: border-box; }
+  form #firstName, form #lastName {
+    width: 47%; }
+  form #butSignUp {
+    display: none; }
+  form #butSignUp:checked ~ #signUpChecker {
+    background-color: #1ab188;
+    color: white; }
+  form #butSignUp:checked ~ #login {
+    display: none; }
+  form #butSignUp:checked ~ #firstName {
+    display: flex; }
+  form #butSignUp:checked ~ #lastName {
+    display: flex; }
+  form #butLogIn:checked ~ #logInChecker {
+    background-color: #1ab188;
+    color: white; }
+  form #butLogIn:checked ~ #login {
+    display: flex; }
+  form #butLogIn:checked ~ #firstName {
+    display: none; }
+  form #butLogIn:checked ~ #lastName {
+    display: none; }
+  form #butLogIn {
+    display: none; }
+  form label {
+    width: 50%;
+    cursor: pointer;
+    background-color: #435259;
+    color: #9eb5bb;
+    padding: 16px 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px; }
+  form button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 18px 5px;
+    border: none;
+    background-color: #1ab188;
+    cursor: pointer; }
+    form button:hover {
+      transform: scale(1.02);
+      transition: 0.4s ease-in-out; }
+  form span {
+    color: white;
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px; }
+
+.alertButton {
+  border-color: darkred;
+  color: red;
+  opacity: 0.7; }
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+#signUpChecker:hover {
+  animation: pulse 1s infinite; }
+
+#logInChecker:hover {
+  animation: pulse 1.2s infinite; }
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.035); }
+  100% {
+    transform: scale(1); } }
+
+/*# sourceMappingURL=style.css.map */

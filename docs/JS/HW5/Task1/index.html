@@ -10,13 +10,18 @@
 </head>
 <body>
     <form>
+        <input id="butSignUp" type="radio" name="enterType" value="singUp" checked>
+        <label for="butSignUp" id="signUpChecker" class="flex-center">Sign Up</label>
+        <input id="butLogIn" type="radio" name="enterType" value="logIn">
+        <label for="butLogIn" id="logInChecker" class="flex-center">Log in</label>
+        <span>Sing Up for Free</span>
         <input type="text" id="login" placeholder="login">
+        <input type="text" id="firstName" placeholder="First Name">
+        <input type="text" id="lastName" placeholder="Last Name">
         <input type="text" id="mail" placeholder="example@mail.ru">
         <input type="text" id="password" placeholder="Password">
-        <button type="button" onclick="logIn()">Вход</button>
-        <button type="reset">Очистить</button>
+        <button type="button" onclick="logIn()">Get started</button>
     </form>
-
 <script src="js/script.js"></script>
 </body>
 </html>
