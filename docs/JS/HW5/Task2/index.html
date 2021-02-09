@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="getStart">
+    <span onclick="loadModalWindow()">Get Start</span>
+</div>
+<div id="formType">
+    <span id="buttonClose" onclick="closeModalWindow()"><i class="fas fa-times"></i></span>
     <form>
         <input id="butSignUp" type="radio" name="enterType" value="singUp" checked>
         <label for="butSignUp" id="signUpChecker" class="flex-center">Sign Up</label>
@@ -22,6 +27,7 @@
         <input type="text" id="password" placeholder="Password" onchange="resetAlert()">
         <button type="button" onclick="logIn()">Get started</button>
     </form>
+</div>
 <script src="js/script.js"></script>
 </body>
 </html>

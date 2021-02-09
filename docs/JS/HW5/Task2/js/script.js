@@ -75,3 +75,11 @@ function resetAlert() {
     document.getElementById('mail').classList.remove('alertButton');
     document.getElementById('login').classList.remove('alertButton');
 }
+
+function loadModalWindow() {
+    document.getElementById('formType').style.display = 'flex';
+}
+
+function closeModalWindow() {
+    document.getElementById('formType').style.display = 'none';
+}
