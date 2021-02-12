@@ -21,11 +21,12 @@ function boundedEnum(context) {
                 console.log(String.prototype.split.call(mineArray[v], ''))
             })
             // for Set class
-
         } else if (context[v].constructor === Set){
             console.log('Set');
-
-            console.log(String.prototype.split.call(context[v],('')));
+            var newArray3 = [...context[v]];
+            Array.prototype.forEach.call(newArray3, (k, v) => {
+                console.log(String.prototype.split.call(newArray3[v], ''))
+            })
             }
     })
 }
